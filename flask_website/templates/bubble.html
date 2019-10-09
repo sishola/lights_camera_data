@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Studio Bubbles</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Ubuntu"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="static/css/style.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="/">
+              <b>Lights! Camera! Data!</b>
+              <img class="nav-camera" src="static/images/cam.svg" />
+            </a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="movie_ring"> Movie Ring </a></li>
+              <li><a href="word_cloud"> Genre Cloud </a></li>
+              <li><a href="treemap"> Studio Tree </a></li>
+              <li><a href="bubble"> Studio Bubble </a></li>
+              <li><a href="map"> Foreign Gross</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="card">
+        <div class="card-body">
+          <div id="chartdiv" style="max-width: 99%; height:800px;"></div>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <span class="bottom">Data Visualization Project</span>
+      </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://www.amcharts.com/lib/4/core.js"></script>
+    <script src="https://www.amcharts.com/lib/4/charts.js"></script>
+    <script src="https://www.amcharts.com/lib/4/plugins/forceDirected.js"></script>
+    <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>
+    <script src="./static/js/bubble_app.js"></script>
+  </body>
+</html>

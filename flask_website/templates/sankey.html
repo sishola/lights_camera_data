@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Movie Ring of Knowledge</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Ubuntu"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="static/css/style.css" />
+
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="/">
+              <b>Lights! Camera! Data!</b>
+              <img class="nav-camera" src="static/images/cam.svg" />
+            </a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="movie_ring"> Movie Ring </a></li>
+              <li><a href="word_cloud"> Genre Cloud </a></li>
+              <li><a href="bubble"> Studio Bubble </a></li>
+              <li><a href="treemap"> Studio Tree </a></li>
+              <li><a href="map"> Foreign Gross </a></li>
+              <li><a href="json"> Data </a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="windowBox" id="filter">
+        <!-- <h3><b>Customize Top Movie Range</b></h3>
+          <form class="form-inline">
+            <div class="form-group">
+              <label for="start">Start:</label>
+              <input type="number" class="start" id="start" placeholder="1">
+            </div>
+            <div class="form-group">
+              <label for="end">End:</label>
+              <input type="number" class="end" id="end" placeholder="250">
+            </div>
+            <button id="filter-btn" type="button" class="btn btn-default">Go!</button>
+          </form> -->
+        <div id="sankey_multiple" style="width: 900px; height: 600px;"></div>
+      </div>
+
+      <footer class="footer">
+        <span class="bottom">Data Visualization Project</span>
+      </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="./static/js/chord_app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://dexjs.net/js/dex-jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://dexjs.net/js/dex-bootstrap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <script src="https://dexjs.net/js/dex-libs.js"></script>
+    <script src="https://dexjs.net/js/dex.js"></script>
+    <script>
+      d3 = dex.charts.d3.d3v3;
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3plus/1.9.8/d3plus.min.js"></script>
+
+    <script src="./static/js/sankey.js"></script>
+  </body>
+</html>
